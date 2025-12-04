@@ -20,7 +20,7 @@ In your GitHub Actions workflow, use this action like so:
 
 ```yaml
       - name: Install uv from PyPI
-        uses: install-pinned/uv@69fcbe3e5f98cc20834aa0f7722814d1708b310c  # 0.1.35
+        uses: install-pinned/uv@42cb032c9ac57bbced656695407ff394eb56e28e  # 0.9.15
 ```
 
 You can [set up Dependabot](https://docs.github.com/en/code-security/dependabot/working-with-dependabot/keeping-your-actions-up-to-date-with-dependabot#example-dependabotyml-file-for-github-actions)
@@ -28,7 +28,7 @@ so that your pins are updated regularly.
 
 ## Alternatives
 
-This action is a relatively simple wrapper around [poetry](https://python-poetry.org/)         and is most useful if there is no existing `requirements.txt`/`poetry.lock`/... infrastructure in place.         If you already pin all your dependencies in a single place, you don't need it!
+This action is a relatively simple wrapper around [uv](https://docs.astral.sh/uv/)         and is most useful if there is no existing `requirements.txt`/`uv.lock`/... infrastructure in place.         If you already pin all your dependencies in a single place, you don't need it!
 
 ## More Details
 
